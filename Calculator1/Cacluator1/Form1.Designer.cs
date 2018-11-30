@@ -30,6 +30,7 @@
         {
             this.btnAnswer = new System.Windows.Forms.Button();
             this.tbFirstNumber = new System.Windows.Forms.TextBox();
+            this.tbSecondNumber = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnAnswer
@@ -38,8 +39,9 @@
             this.btnAnswer.Name = "btnAnswer";
             this.btnAnswer.Size = new System.Drawing.Size(75, 23);
             this.btnAnswer.TabIndex = 0;
-            this.btnAnswer.Text = "button1";
+            this.btnAnswer.Text = "Answer";
             this.btnAnswer.UseVisualStyleBackColor = true;
+            this.btnAnswer.Click += new System.EventHandler(this.btnAnswer_Click);
             // 
             // tbFirstNumber
             // 
@@ -49,11 +51,20 @@
             this.tbFirstNumber.TabIndex = 1;
             this.tbFirstNumber.Text = "10";
             // 
+            // tbSecondNumber
+            // 
+            this.tbSecondNumber.Location = new System.Drawing.Point(230, 34);
+            this.tbSecondNumber.Name = "tbSecondNumber";
+            this.tbSecondNumber.Size = new System.Drawing.Size(100, 20);
+            this.tbSecondNumber.TabIndex = 2;
+            this.tbSecondNumber.Text = "15";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tbSecondNumber);
             this.Controls.Add(this.tbFirstNumber);
             this.Controls.Add(this.btnAnswer);
             this.Name = "Form1";
@@ -67,6 +78,7 @@
 
         private System.Windows.Forms.Button btnAnswer;
         private System.Windows.Forms.TextBox tbFirstNumber;
+        private System.Windows.Forms.TextBox tbSecondNumber;
     }
 }
 

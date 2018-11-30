@@ -16,5 +16,17 @@ namespace Cacluator1
         {
             InitializeComponent();
         }
+
+        private void btnAnswer_Click(object sender, EventArgs e)
+        {
+            int firstTextBoxNumber;
+            int secondTextBoxNumber;
+            int answer;
+            firstTextBoxNumber = int.Parse(tbFirstNumber.Text);
+            secondTextBoxNumber = int.Parse(tbSecondNumber.Text);
+            answer = firstTextBoxNumber + secondTextBoxNumber;
+            MessageBox.Show(answer.ToString(),"Your Answer");
+
+        }
     }
 }
